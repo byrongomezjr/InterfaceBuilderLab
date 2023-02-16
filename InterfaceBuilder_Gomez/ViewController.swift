@@ -15,7 +15,17 @@ class ViewController: UIViewController {
     @IBAction func changeTitle(_ sender: UIButton
     ) {
         textToggle.toggle();
+        if textToggle {
+            mainLaber.text = "I am learning how to build really awesome apps!"
+            view.backgroundColor = .systemOrange
+        } else {
+            mainLaber.text = "This app rocks!"
+            view.backgroundColor = .systemRed
+        }
     }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
